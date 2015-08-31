@@ -23,6 +23,6 @@ fis.media('prod').match('*', {
     to: '/'
   })
 });
-fis.match('/client/static/js/*.js', {
-  domain: 'http://cdn.baidu.com/'
+fis.match('/client/js/*.js', {
+  domain: '//cdn.hzins.com'
 });
