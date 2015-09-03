@@ -1,25 +1,38 @@
-module.exports = function(router){
-    // you can add app common logic here
-    // router.use(function(req, res, next){
-    // });
+module.exports = function (router) {
+  //跨模块引用 引用common模块下面的app.js
+  var app = yog.require('common/model/app.js');
+  var nav = require('./model/nav.js');
 
-    // also you can add custom action
-    // require /spa/some/hefangshi
-    // router.get('/some/:user', router.action('api'));
-    
-    // or write action directly
-    // router.get('/some/:user', function(res, req){});
+  // you can add app common logic here
+  // router.use(function(req, res, next){
+  // });
 
-    // a restful api example
-    router.route('/book')
-        // PUT /home/book
-        .put(router.action('book').put)
-        // GET /home/book
-        .get(router.action('book'));
 
-    router.route('/book/:id')
-        // GET /home/book/1
-        .get(router.action('book').get)
-        // DELETE /home/book/1
-        .delete(router.action('book').delete);
+  // also you can add custom action
+  // require /spa/some/hefangshi
+  // router.get('/some/:user', router.action('api'));
+
+  // or write action directly
+  // 这里是因为 about,solution等模块没有复杂等业务逻辑 公用代码量多 所以直接在router里面解决他们
+  // 这里也有必要注释下 在swig模板中 缺少某个字段 模板引擎不会抛出异常
+  var resObj = {
+    app: app.getInfo(),
+    nav: nav.getItems()
+  };
+  //平台介绍
+  router.get('/about', function (req, res, next) {
+    res.render('home/page/about.tpl', resObj);
+  });
+  //解决方案
+  router.get('/solution', function (req, res, next) {
+    res.render('home/page/solution.tpl', resObj);
+  });
+  //平台功能
+  router.get('/function', function (req, res, next) {
+    res.render('home/page/function.tpl', resObj);
+  });
+  //常见问题
+  router.get('/question', function (req, res, next) {
+    res.render('home/page/question.tpl', resObj);
+  });
 };

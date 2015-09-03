@@ -23,6 +23,8 @@ fis.media('prod').match('*', {
     to: '/'
   })
 });
-fis.match('/client/js/*.js', {
+/*
+//cdn设置
+fis.match('/client/js/!*.js', {
   domain: '//cdn.hzins.com'
-});
+});*/

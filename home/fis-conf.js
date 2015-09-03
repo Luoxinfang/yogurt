@@ -24,7 +24,7 @@ fis.media('prod').match('*', {
   })
 });
 
-fis.match('/client/static/js/*.js', {
+fis.media('prod').match('/client/static/js/*.js', {
   packTo: 'p.js'
 });
 

@@ -4,48 +4,24 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="{{app.description}}">
+<meta name="keyword" content="{{app.keyword}}">
 <link rel="icon" href="/static/favicon.ico">
-<title>{{ title }}</title>
+<title>{{ app.title }}</title>
 {% require "common:js/jquery-1.8.0.js" %}
+{% require "common:js/bigpipe.js" %}
 {% endhead %}
 
 {% body %}
-<div class="header">
+
+{% widget 'home:widget/header/header.tpl' %}
+{% widget 'home:widget/nav/nav.tpl' %}
+
+<!-- main content -->
+{% block content %} {% endblock %}
 
 
-</div>
-<div class="nav">
-  <ul class="con">
-    {%for item in nav%}
-    <li>
-      {%if item.children%}
-      <a href="{{item.href}}">{{item.title}}</a>
-
-      <div class="pt2">
-        <ul>
-          {%for children in item.children %}
-          <li>
-            <a href="{{children.href}}">{{children.title}}</a>
-          </li>
-          {%endfor%}
-        </ul>
-      </div>
-      {%else%}
-      <a href="{{item.href}}">{{item.title}}</a>
-      {%endif%}
-    </li>
-    {%endfor%}
-  </ul>
-</div>
-<div id="wrapper">
-  <div id="middle" class="container">
-    {% block content %}
-    {% endblock %}
-  </div>
-</div>
-
+{% widget 'home:widget/footer/footer.tpl' %}
 {% endbody %}
 
 {% endhtml %}
