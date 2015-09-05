@@ -5,10 +5,10 @@
   <!--因为block外面的内容不会被渲染 所以需要把css放到这里-->
   {% require "home:static/css/index.css" %}
 
-  {% widget 'home:widget/slider/slider.tpl' %}
-
+  {% widget 'home:widget/slider/main.tpl' %}
+  {% widget 'home:widget/login/login.tpl' %}
   <!--
-    notify model
+    notify model:bigpipe
     in order to render more faster , we used the bigpipe in our projects
     1.在页面中添加一个spage组件 来引用模板文件
     2.在widget目录下面添加一个对应的模板文件 也可以添加css和js文件
@@ -16,8 +16,13 @@
     //4.如果只是当前页面使用了bigpipe技术 记得在页面中单独声明对bigpipe.js的依赖
   -->
   <div class="notify-list-warp">
-    正在加载数据...
-    {% spage 'home:widget/bigpipe/notify-list.tpl' id="notify-list" mode="async" %}
+    <div class="loading">正在加载数据...</div>
+    {% spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async" %}
+  </div>
+
+  <div class="bigpipe-test-warp">
+    <div class="loading">测试多个bigpipe模块</div>
+    {% spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async" %}
   </div>
 
   {% script %}

@@ -24,8 +24,23 @@ module.exports = function (req, res) {
           content: '来自bigpipe返回的数据－3'
         }]
       });
-    },300);
+    },3000);
   });
-
+  res.bigpipe.bind('bigpipe-test', function (cb) {
+    setTimeout(function () {
+      cb(null,{
+        list:[{
+          title: 'test－1',
+          content: '来自bigpipe返回的数据－1'
+        },{
+          title: 'test－2',
+          content: '来自bigpipe返回的数据－2'
+        },{
+          title: 'test－3',
+          content: '来自bigpipe返回的数据－3'
+        }]
+      });
+    },1000);
+  });
   res.render('home/page/index.tpl', data);
 };
