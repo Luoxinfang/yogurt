@@ -2,13 +2,13 @@
  * Created by luoxinfang on 15/9/6.
  */
 
-var login = {
-
+module.exports = {
   init: function () {
 
     this.events();
   },
-  submit: function () {
+  submit: function (e) {
+    e.preventDefault();
     var user = {
       userName: $('#user-name').val(),
       userPwd: $('#user-pwd').val()
@@ -27,5 +27,3 @@ var login = {
     $('#btn-login').on('click', this.submit);
   }
 };
-
-login.init();

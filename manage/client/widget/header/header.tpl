@@ -8,6 +8,6 @@
       <img src="./img/logo.png" alt="保险频道-渠道分销联盟" title="保险频道-渠道分销联盟">
     </a>
     {% widget 'manage:widget/nav/nav.tpl' %}
-
+    {% widget 'manage:widget/search/search.tpl' %}
   </div>
 </div>

@@ -1,6 +1,5 @@
 <!--
    login model
-
 -->
 <form action="">
   <input type="text" name="user-name" id="user-name"/>
@@ -8,3 +7,7 @@
   <input type="text" name="verify-code"/>
   <button type="submit" id="btn-login">登录</button>
 </form>
+
+{% script %}
+  require("login.js").init();
+{% endscript %}

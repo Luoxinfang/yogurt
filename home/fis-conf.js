@@ -27,6 +27,10 @@ fis.media('prod').match('*', {
 fis.media('prod').match('/client/static/js/*.js', {
   packTo: 'p.js'
 });
+// widget 目录下为组件
+fis.media('debug').match('/client/widget/**.js', {
+  isMod: true
+});
 
 
 
