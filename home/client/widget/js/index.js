@@ -1,0 +1,23 @@
+/**
+ * Created by luoxinfang on 15/9/3.
+ * index page
+ * @author roy
+ *
+ */
+module.exports = {
+  init: function () {
+    var $nav = $('.nav li');
+
+
+    this.events();
+  },
+  //bigpipe loaded 
+  pageletdone: function () {
+    var $loading = $('.' + arguments[1].id + '-warp').find('.loading');
+    $loading.hide();
+  },
+  //events
+  events: function () {
+    BigPipe.on('pageletdone', this.pageletdone);
+  }
+};
