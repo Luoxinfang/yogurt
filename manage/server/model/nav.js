@@ -9,7 +9,7 @@ module.exports.getItems = function () {
   }, {
     title: '投保',
     href: '/product/list',
-    children: null,
+    children: null
   }, {
     title: '订单',
     href: '/order/all',

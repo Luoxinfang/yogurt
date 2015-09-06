@@ -18,7 +18,7 @@
 
 {% body %}
 
-{% widget 'home:widget/header/main.tpl' %}
+{% widget 'home:widget/header/header.tpl' %}
 {% widget 'home:widget/nav/nav.tpl' %}
 
 <!-- main content -->

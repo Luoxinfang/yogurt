@@ -14,13 +14,13 @@ if (fis.IS_FIS3) {
         optimizer: null,
         useHash: false,
         deploy: fis.plugin('http-push', {
-            receiver: 'http://127.0.0.1:8085/yog/upload',
+            receiver: 'http://127.0.0.1:3000/yog/upload',
             to: '/'
         })
     });
     fis.media('debug-prod').match('*', {
         deploy: fis.plugin('http-push', {
-            receiver: 'http://127.0.0.1:8085/yog/upload',
+            receiver: 'http://127.0.0.1:3000/yog/upload',
             to: '/'
         })
     });

@@ -9,7 +9,7 @@ module.exports.getItems = function () {
   }, {
     title: '平台介绍',
     href: '/about',
-    children: null,
+    children: null
   }, {
     title: '解决方案',
     href: '/solution',

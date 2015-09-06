@@ -1,25 +1,14 @@
 module.exports = function(router){
-    // you can add app common logic here
-    // router.use(function(req, res, next){
-    // });
+  //跨模块引用 引用common模块下面的app.js
+  var app = yog.require('common/model/app.js');
+  var nav = require('./model/nav.js');
+  var resObj = {
+    app: app.getInfo(),
+    nav: nav.getItems()
+  };
 
-    // also you can add custom action
-    // require /spa/some/hefangshi
-    // router.get('/some/:user', router.action('api'));
-    
-    // or write action directly
-    // router.get('/some/:user', function(res, req){});
 
-    // a restful api example
-    router.route('/book')
-        // PUT /manage/book
-        .put(router.action('book').put)
-        // GET /manage/book
-        .get(router.action('book'));
 
-    router.route('/book/:id')
-        // GET /manage/book/1
-        .get(router.action('book').get)
-        // DELETE /manage/book/1
-        .delete(router.action('book').delete);
+
+  
 };
