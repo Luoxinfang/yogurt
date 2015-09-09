@@ -7,4 +7,28 @@ module.exports = function (req, res) {
     nav: nav.getItems()
   };
   res.render('manage/page/index.tpl', resObj);
+  res.bigpipe.bind('notify-list', function (cb) {
+    setTimeout(function () {
+      cb(null, [{
+        title:'notify-1',
+        content: 'content-1'
+      }]);
+    });
+  },1000);
+  res.bigpipe.bind('account-info', function (cb) {
+    setTimeout(function () {
+      cb(null, [{
+        title:'notify-1',
+        content: 'content-1'
+      }]);
+    });
+  },1000);
+  res.bigpipe.bind('last-insured', function (cb) {
+    setTimeout(function () {
+      cb(null, [{
+        title:'notify-1',
+        content: 'content-1'
+      }]);
+    });
+  },1000);
 };

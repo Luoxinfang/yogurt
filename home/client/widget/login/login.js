@@ -19,7 +19,14 @@ module.exports = {
       data: user,
       dataType: 'json',
       success: function (data) {
-        console.log(data);
+        if(data.status === '00000'){
+          location.href = '/manage';
+        }else{
+
+        }
+      },
+      error: function () {
+        
       }
     })
   },

@@ -10,6 +10,7 @@ module.exports = function (req, res) {
     app: app.getInfo(),
     nav: nav.getItems()
   }
+  res.render('home/page/index.tpl', data);
   res.bigpipe.bind('notify-list', function (cb) {
     setTimeout(function () {
       cb(null,{
@@ -42,5 +43,4 @@ module.exports = function (req, res) {
       });
     },1000);
   });
-  res.render('home/page/index.tpl', data);
 };
