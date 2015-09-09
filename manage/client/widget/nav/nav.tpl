@@ -7,7 +7,9 @@
   <ul class="con">
     {%for item in nav%}
     <li class="item fl">
-      {%if item.children%}
+      {%if !item.children%}
+      <a href="{{item.href}}">{{item.title}}</a>
+      {%else%}
       <a href="{{item.href}}">{{item.title}}</a>
       <div class="pt2">
         <ul>
@@ -18,8 +20,6 @@
           {%endfor%}
         </ul>
       </div>
-      {%else%}
-      <a href="{{item.href}}">{{item.title}}</a>
       {%endif%}
     </li>
     {%endfor%}
