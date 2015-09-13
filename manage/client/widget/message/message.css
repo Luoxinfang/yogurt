@@ -1,0 +1,13 @@
+.notice {
+  background-color: white;
+  height: 42px;
+  line-height: 42px;
+}
+.notice .btn-close {
+  width: 24px;
+  height: 24px;
+  line-height: 21px;
+  color: white;
+  margin-top: 8px;
+  background-color: #cccccc;
+}
