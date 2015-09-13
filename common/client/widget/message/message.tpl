@@ -1,5 +1,5 @@
 <!--
-  message ui ×é¼þ
+  message ui ç»„ä»¶
   @author roy
   @require marquee.css
 -->

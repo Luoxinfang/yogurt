@@ -9,7 +9,8 @@ module.exports = function (req, res) {
   var resObj = {
     app: app.getInfo(),
     nav: nav.getItems(),
-    msgList: data.msgList
+    msgList: data.msgList,
+    moneyInfo: data.moneyInfo
   };
 
   res.render('manage/page/index.tpl', resObj);

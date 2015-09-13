@@ -12,6 +12,9 @@
 	margin-right: auto;
 }
 
+.clearfix{
+	clear: left;
+}
 /*layout*/
 .warp {
 	width: 1000px;

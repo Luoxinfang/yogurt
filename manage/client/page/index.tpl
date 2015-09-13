@@ -4,11 +4,20 @@
 {% require "manage:static/css/index.css" %}
 <div class="notice">
 	<div class="warp fc">
-		<span class="fl">ÏûÏ¢£º</span>
+		<span class="fl">æ¶ˆæ¯:</span>
 		{% widget 'common:widget/message/message.tpl' %}
-		<span class="btn-close circle dib fr mr-lg">¡Á</span>
+		<span class="btn-close circle dib fr mr-lg">X</span>
 	</div>
-	<div class="main warp">
+	<div class="main warp fc">
+		<ul>
+			<li>logo</li>
+			<li>{{moneyInfo.todayIncome}}</li>
+			<li>{{moneyInfo.myCoint}}</li>
+			<li>{{moneyInfo.unsetmentIncome}}</li>
+			<li>{{moneyInfo.errorKey}}</li>
+		</ul>
+		{% widget 'common:widget/slider/slider.tpl' %}
+
 
 
 	</div>
