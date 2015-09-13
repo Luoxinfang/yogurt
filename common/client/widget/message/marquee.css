@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*marquee插件的样式
+ *left和right共用一个
+[[*/
+.plus-mar-left {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.plus-mar-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.plus-mar-left li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-indent: 15px;
+}
+
+.plus-mar-top {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.plus-mar-top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.plus-mar-top li {
+    padding-right: 10px;
+}
+
+.plus-mar-bottom {
+    word-break: keep-all;
+    white-space: nowrap;
+    position: relative;
+}
+
+.plus-mar-bottom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    position: relative;
+}
+
+.plus-mar-bottom li {
+    padding-right: 10px;
+}
+
+.plus-mar-up {
+    overflow: hidden;
+}
+
+.plus-mar-up ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+.plus-mar-down {
+    position: relative;
+}
+
+.plus-mar-down ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/*]]marquee插件的样式*/

@@ -1,6 +1,25 @@
-
-
 /*float*/
-.fl{
-  float: left;
+.fl {
+	float: left;
 }
+
+.fr {
+	float: right;
+}
+
+.fc {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*layout*/
+.warp {
+	width: 1000px;
+}
+
+/*display*/
+.hide {
+	display: none;
+}
+
+

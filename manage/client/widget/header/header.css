@@ -4,8 +4,7 @@
   background-color: #cc3333;
 }
 
-.warp {
-  width: 1000px;
+.header .warp {
   height: 60px;
   margin: 0 auto;
 }

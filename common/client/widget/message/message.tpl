@@ -1,5 +1,21 @@
-<h1>marquee blockd!</h1>
+<!--
+  message ui ×é¼þ
+  @author roy
+  @require marquee.css
+-->
 
+<div class="msg-list" id="msg-list">
+	<ul>
+		{% for item in msgList%}
+		<li>
+			<a class="black6" href="{{item.href}}">
+				{{item.title}}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
 {% script %}
-  require('common:widget/js/marquee.js')
+	require('common:widget/js/marquee.js');
+	$('#msg-list').marquee({direction:'up',speed:3000});
 {% endscript %}
