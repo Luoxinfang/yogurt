@@ -22,7 +22,9 @@
 {% widget 'home:widget/nav/nav.tpl' %}
 
 <!-- main content -->
-{% block content %} {% endblock %}
+{% block content %}
+default content
+{% endblock %}
 
 
 {% widget 'home:widget/footer/main.tpl' %}

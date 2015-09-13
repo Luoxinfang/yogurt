@@ -6,6 +6,7 @@ module.exports = function (req, res) {
     app: app.getInfo(),
     nav: nav.getItems()
   };
+
   res.render('manage/page/index.tpl', resObj);
   res.bigpipe.bind('notify-list', function (cb) {
     setTimeout(function () {

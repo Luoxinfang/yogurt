@@ -7,14 +7,17 @@ module.exports = function (req, res, next) {
 };
 //login
 module.exports.get = function (req, res, next) {
+  console.log(req.param('userName'));
   res.json({
     status:'00000'
   });
 };
 //
 module.exports.post = function (req, res, next) {
-
-
+  console.log(req.param('userName'));
+  res.json({
+    status:'00000'
+  });
 };
 
 module.exports.put = function (req, res, next) {
