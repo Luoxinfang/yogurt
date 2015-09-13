@@ -1,1 +1,5 @@
-<h1>Hello world!</h1>
+<h1>marquee blockd!</h1>
+
+{% script %}
+  require('common:widget/js/marquee.js')
+{% endscript %}
