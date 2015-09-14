@@ -9,7 +9,7 @@
 <link rel="icon" href="/static/favicon.ico">
 <title>{{ app.title }}</title>
 
-{% require "manage:static/css/normalize.css" %}
+{% require "common:css/normalize.css" %}
 {% require "manage:static/css/common.css" %}
 
 {% require "common:js/jquery-1.8.0.js" %}
