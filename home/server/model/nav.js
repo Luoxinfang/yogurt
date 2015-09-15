@@ -5,7 +5,8 @@ module.exports.getItems = function () {
   return [{
     title: '首页',
     href: '/',
-    children: null
+    children: null,
+    current: true
   }, {
     title: '平台介绍',
     href: '/about',

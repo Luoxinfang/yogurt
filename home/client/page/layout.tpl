@@ -9,7 +9,10 @@
 <link rel="icon" href="/static/favicon.ico">
 <title>{{ app.title }}</title>
 
+{% require "common:css/normalize.css" %}
+{% require "common:css/global.css" %}
 {% require "home:static/css/common.css" %}
+{% require "home:static/css/global.css" %}
 
 {% require "common:js/jquery-1.8.0.js" %}
 {% require "common:js/bigpipe.js" %}
@@ -19,7 +22,8 @@
 {% body %}
 
 {% widget 'home:widget/header/header.tpl' %}
-{% widget 'home:widget/nav/nav.tpl' %}
+
+
 
 <!-- main content -->
 {% block content %}
@@ -27,7 +31,7 @@ default content
 {% endblock %}
 
 
-{% widget 'home:widget/footer/main.tpl' %}
+{% widget 'home:widget/footer/footer.tpl' %}
 {% endbody %}
 
 {% endhtml %}

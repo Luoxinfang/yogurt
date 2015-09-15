@@ -1,4 +1,16 @@
-.header .logo {
-  width: 120px;
+.header {
+  height: 100px;
+  background: #fff;
+}
+
+.header-logo {
   height: 50px;
+  width: 188px;
+  padding: 25px 0;
+}
+.header-logo .ap-logo {
+  display: block;
+  height: 50px;
+  width: 188px;
+  background: url("img/logo.png") no-repeat 0 0;
 }
