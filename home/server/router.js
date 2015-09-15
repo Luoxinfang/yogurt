@@ -16,9 +16,14 @@ module.exports = function (router) {
   // 这里是因为 about,solution等模块没有复杂等业务逻辑 公用代码量多 所以直接在router里面解决他们
   // 这里也有必要注释下 在swig模板中 缺少某个字段 模板引擎不会抛出异常
   var resObj = {
-    app: app.getInfo(),
-    nav: nav.getItems()
+    app: app.getInfo()
+
   };
+  router.get('*', function (req, res, next) {
+    resObj.nav = nav.getItems(req.originalUrl);
+    next();
+  });
+  //这里没有定义的路由会再次去action文件中查找
   //平台介绍
   router.get('/about', function (req, res, next) {
     res.render('home/page/about.tpl', resObj);

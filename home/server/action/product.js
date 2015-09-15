@@ -8,7 +8,8 @@ module.exports = function (req, res) {
   var util = require('../lib/util.js');
   var data = {
     app: app.getInfo(),
-    nav: nav.getItems()
-  }
+    nav: nav.getItems('product')
+  };
+
   res.render('home/page/product.tpl', data);
 };

@@ -8,7 +8,7 @@ module.exports = function (req, res) {
   var util = require('../lib/util.js');
   var data = {
     app: app.getInfo(),
-    nav: nav.getItems()
-  }
+    nav: nav.getItems('notify')
+  };
   res.render('home/page/notify.tpl', data);
 };

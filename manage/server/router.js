@@ -1,5 +1,5 @@
 module.exports = function(router){
-  //¿çÄ£¿éÒıÓÃ ÒıÓÃcommonÄ£¿éÏÂÃæµÄapp.js
+  //è·¨æ¨¡å—å¼•ç”¨ å¼•ç”¨commonæ¨¡å—ä¸‹é¢çš„app.js
   var app = yog.require('common/model/app.js');
   var nav = require('./model/nav.js');
   var resObj = {
