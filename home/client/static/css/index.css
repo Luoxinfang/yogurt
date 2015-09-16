@@ -1,6 +1,72 @@
 /*.notify-list-warp{
   min-height: 120px;
 }*/
+.banner{
+  position: relative;
+}
+
+/* 最新公告 */
+.notice {
+  height: 42px;
+  line-height: 42px;
+}
+
+/* 企业优势 */
+.advantages {
+  height: 305px;
+  padding: 10px 0;
+  background: url("../img/advantages.png") no-repeat center 10px;
+}
+
+/* 合作方式 */
+.module-ways .way-box {
+  height: 438px;
+}
+.module-ways .way-1,
+.module-ways .way-2,
+.module-ways .way-3 {
+  height: 438px;
+}
+.module-ways .way-1 {
+  background: #f0f0f0 url("../img/index-01.jpg") no-repeat center top;
+}
+.module-ways .way-2 {
+  position: relative;
+  background: url("../img/index-02.jpg") no-repeat center top;
+}
+.module-ways .way-2 .btn-spread {
+  position: absolute;
+  top: 327px;
+  left: 581px;
+  width: 150px;
+  padding: 9px 0;
+}
+.module-ways .way-3 {
+  background: #f0f0f0 url("../img/index-03.jpg") no-repeat center top;
+}
+/* 客户端下载 */
+.download {
+  height: 192px;
+  padding: 28px 0 0;
+}
+.download .box1 {
+  width: 135px;
+  margin-right: 133px;
+  font-size: 14px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.download .box2, .download .box3 {
+  width: 298px;
+  overflow: hidden;
+}
+.download .box2 {
+  margin-right: 130px;
+}
+.download .btn-negative {
+  width: 150px;
+  padding: 9px 0;
+}
 #notify-list{
   min-height: 120px;
 }

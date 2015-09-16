@@ -1,0 +1,66 @@
+/* 登录框 */
+.login-layer {
+    position: relative;
+    z-index: 10;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.login-box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 276px;
+    padding: 30px 35px;
+    background: #fff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.login-box .input-item {
+    position: relative;
+    width: 276px;
+    border: 1px solid #e7e7eb;
+}
+
+.login-box .password-item {
+    border-top: 0;
+}
+
+.login-box .login-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background-image: url("img/login-icon.png");
+    background-repeat: no-repeat;
+}
+
+.login-box .name-label {
+    background-position: 0 0;
+}
+
+.login-box .password-label {
+    background-position: 0 -44px;
+}
+
+.login-box .login-input {
+    width: 220px;
+    height: 20px;
+    padding: 11px 10px 13px 46px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 0;
+}
+
+.login-box .verify-input {
+    width: 90px;
+    height: 20px;
+    padding: 13px 10px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #e7e7eb;
+    vertical-align: middle;
+}

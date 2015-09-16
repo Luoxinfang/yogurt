@@ -3,7 +3,7 @@
   @author roy
   在fis3中 没有声明依赖的时候 会默认加载同名的js和css
 -->
-<div class="ui-nav">
+<div class="ui-nav fr">
   <ul>
     {%for item in nav%}
     <li class="ui-nav-item{%if item.current%} ui-nav-cur{%endif%}">

@@ -21,8 +21,8 @@
 
 {% body %}
 
+{% widget 'common:widget/sidebar/sidebar.tpl' %}
 {% widget 'home:widget/header/header.tpl' %}
-
 
 
 <!-- main content -->

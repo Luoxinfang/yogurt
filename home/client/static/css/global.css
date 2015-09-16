@@ -46,9 +46,25 @@ textarea:-ms-input-placeholder {
   font-size: 14px;
 }
 
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 .row {
   width: 1000px;
   margin: 0 auto;
+}
+
+.show {
+  display: block;
 }
 
 .hide {
@@ -206,3 +222,32 @@ textarea:-ms-input-placeholder {
   zoom: 1;
 }
 
+/* 按钮 */
+.btn-negative {
+  display: inline-block;
+  width: 120px;
+  padding: 6px 0 7px;
+  text-align: center;
+  color: #e4393c;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #e4393c;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.btn-negative:hover {
+  color: #fff;
+  background: #e4393c;
+}
+
+.btn-fill-negative {
+  background-color: #e4393c;
+  color: #fff;
+}
+
+.btn-fill-negative:hover {
+  background-color: #ce1c1f;
+}
