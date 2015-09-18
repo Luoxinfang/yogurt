@@ -32,13 +32,16 @@ module.exports = function (req, res) {
       cb(null,{
         list:[{
           title: 'test－1',
-          content: '来自bigpipe返回的数据－1'
+          content: '来自bigpipe返回的数据－1',
+          time: 1442303608739
         },{
           title: 'test－2',
-          content: '来自bigpipe返回的数据－2'
+          content: '来自bigpipe返回的数据－2',
+          time: 1442303608739
         },{
           title: 'test－3',
-          content: '来自bigpipe返回的数据－3'
+          content: '来自bigpipe返回的数据－3',
+          time: 1442303608739
         }]
       });
     },1000);
