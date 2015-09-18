@@ -13,11 +13,11 @@ module.exports = {
   },
   //bigpipe loaded 
   pageletdone: function () {
-    var $loading = $('.' + arguments[1].id + '-warp').find('.loading');
-    $loading.hide();
+    //var $loading = $('.' + arguments[1].id + '-warp').find('.loading');
+    //$loading.hide();
   },
   //events
   events: function () {
-    BigPipe.on('pageletdone', this.pageletdone);
+    //BigPipe.on('pageletdone', this.pageletdone);
   }
 };

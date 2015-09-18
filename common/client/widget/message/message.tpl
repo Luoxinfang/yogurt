@@ -3,7 +3,6 @@
   @author roy
   @require marquee.css
 -->
-
 <div class="msg-list" id="msg-list">
 	<ul>
 		{% for item in msgList%}

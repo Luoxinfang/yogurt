@@ -15,18 +15,8 @@
 <div class="notice bd-e6">
 	<div class="row clearfix">
 		<i class="iconfont fl fc-red fz-16 mr10">&#xe65e;</i>
-
-		<div class="fl" id="msg-list">
-			<ul class="list fls fz-14">
-
-				<li>
-					<a href="/notify/detail/204">
-						<span class="tit">微信专享活动：领队责任险，让您带队无忧</span>
-						<span class="time">5 天前</span>
-					</a>
-				</li>
-
-			</ul>
+		<div class="msg-warp fl">
+			{%widget 'common:widget/message/message.tpl'%}
 		</div>
 		<a href="/notify" class="fr lk-red">更多</a>
 	</div>
@@ -110,15 +100,14 @@
 <!--
   <div class="notify-list-warp">
 	<div class="loading">正在加载数据...</div>
-	{% spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async" %}
+	{#{% spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async" %}#}
   </div>
 
   <div class="bigpipe-test-warp">
 	<div class="loading">测试多个bigpipe模块</div>
-	{% spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async" %}
+	{#{% spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async" %}#}
   </div>
   -->
-
 {%script%}
 require("home:widget/js/index.js").init();
 {%endscript%}

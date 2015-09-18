@@ -11,7 +11,7 @@ module.exports = function (req, res) {
     nav: nav.getItems()
   }
   res.render('home/page/index.tpl', data);
-  res.bigpipe.bind('notify-list', function (cb) {
+/*  res.bigpipe.bind('notify-list', function (cb) {
     setTimeout(function () {
       cb(null,{
         list:[{
@@ -45,5 +45,5 @@ module.exports = function (req, res) {
         }]
       });
     },1000);
-  });
+  });*/
 };

@@ -1,0 +1,25 @@
+.topbar {
+	height: 40px;
+	line-height: 40px;
+	background: #f9f9f9;
+	color: #a5a5a5;
+}
+.topbar a{
+	color: #a5a5a5;
+}
+.topbar a:visited{
+	color: #a5a5a5;
+}
+
+.topbar .con{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.topbar .con-btn{
+	float: left;
+}
+
+.topbar .con-tel{
+	float: right;
+}

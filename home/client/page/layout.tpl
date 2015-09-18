@@ -20,7 +20,7 @@
 {%endhead%}
 
 {%body%}
-
+{%widget 'home:widget/topbar/topbar.tpl'%}
 {%widget 'common:widget/sidebar/sidebar.tpl'%}
 {%widget 'home:widget/header/header.tpl'%}
 
