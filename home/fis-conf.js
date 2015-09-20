@@ -52,11 +52,20 @@ fis.media('prod').match('/static/**.{css,less,scss,js}', {
   useHash: true
 });
 
+fis.match('::package', {
+  packager: fis.plugin('map', {
+    'pkg/all.js': [
+      'static/css/!(global).css',
+      'widget/!*.js'
+    ]
+  })
+});
+
 //把home模块每个页面单独适用的css压缩成对应的css [一个是static下面的css 一个是widget下面的css]
-/*fis.media('prod').match(['/client/static/css/!(global).css',
-  '/client/widget/!(bigpipe|common)/**.css'],{
+fis.media('prod').match('/client/{static/css/!(global).css,widget/$1/**.css}',{
   packTo: 'static/css/$1.css'
-});*/
+});
+
 
 //把home模块公用的css压缩成base.css
 fis.media('prod').match('/client/{widget/common/**/*.css,static/css/global.css}', {

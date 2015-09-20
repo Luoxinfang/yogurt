@@ -5,13 +5,13 @@ var Mock = require('mockjs');
 
 module.exports ={
   msgList: Mock.mock([{
-    'title|1-50': 'title',
+    'title|11-511': 'title',
     'href': '/manage/msg/detail/21'
   }, {
-    'title|1-50': 'title',
+    'title|1-5': 'title',
     'href': '/manage/msg/detail/12'
   }, {
-    'title|1-50': 'title',
+    'title|1-5': 'title',
     'href': '/manage/msg/detail/12'
   }]),
   sliderList:Mock.mock([{
