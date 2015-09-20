@@ -1,0 +1,4 @@
+/**
+ * Created by roy on 15/9/18.
+ */
+module.exports = require('../test');
