@@ -6,9 +6,12 @@ module.exports = function (req, res) {
   var app = yog.require('common/model/app.js');
   var nav = require('../model/nav.js');
   var util = require('../lib/util.js');
+  var indexData = require('../model/index');
   var data = {
     app: app.getInfo(),
-    nav: nav.getItems()
+    nav: nav.getItems(),
+    msgList: indexData.msgList,
+    sliderList: indexData.sliderList
   }
   res.render('home/page/index.tpl', data);
 /*  res.bigpipe.bind('notify-list', function (cb) {

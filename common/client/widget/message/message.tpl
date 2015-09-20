@@ -7,9 +7,7 @@
 	<ul>
 		{% for item in msgList%}
 		<li>
-			<a class="black6" href="{{item.href}}">
-				{{item.title}}
-			</a>
+			<a class="black6" href="{{item.href}}">{{item.title}}</a>
 		</li>
 		{% endfor %}
 	</ul>

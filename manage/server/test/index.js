@@ -1,5 +1,5 @@
 /**
- * Created by hz15041183 on 2015/9/13.
+ * Created by roy on 2015/9/13.
  */
 
 var Mock = require('mockjs');
@@ -16,8 +16,8 @@ module.exports = {
   }]),
   moneyInfo: Mock.mock({
     'todayIncome|0-10000': 100,
-    'myCoint|0-100000': 100,
-    'unsetmentIncome|0-100000': 100,
+    'myCoin|0-100000': 100,
+    'notSettlementIncome|0-100000': 100,
     'refIncome|0-12000': 100
   })
 

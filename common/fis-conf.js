@@ -23,6 +23,12 @@ fis.media('prod').match('*', {
     to: '/'
   })
 });
+//把home模块公用的css压缩成global.css
+fis.media('prod').match('/client/**/*.css', {
+  useHash: true,
+  useSprite: true,
+  packTo: 'css/global.css'
+});
 /*
 //cdn设置
 fis.match('/client/js/!*.js', {

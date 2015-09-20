@@ -4,13 +4,12 @@
 {% block content %}
 <!--因为block外面的内容不会被渲染 所以需要把css放到这里-->
 {% require "home:static/css/index.css" %}
-
-
 <div class="banner">
-	{% widget 'home:widget/login/login.tpl' %}
-	{% widget 'home:widget/slider/slider.tpl' %}
+	{% widget 'home:widget/index/login/login.tpl' %}
+	<div class="slider-warp">
+		{% widget 'common:widget/slider/slider.tpl' %}
+	</div>
 </div>
-
 <!-- 最新公告 -->
 <div class="notice bd-e6">
 	<div class="row clearfix">
@@ -86,8 +85,6 @@
 		</div>
 	</div>
 </div>
-
-
 <!--
 	notify model:bigpipe
 	in order to render more faster , we used the bigpipe in our projects
@@ -96,7 +93,6 @@
 	3.在router中添加对该bigpipe组件的绑定
 	//4.如果只是当前页面使用了bigpipe技术 记得在页面中单独声明对bigpipe.js的依赖
   -->
-
 <!--
   <div class="notify-list-warp">
 	<div class="loading">正在加载数据...</div>

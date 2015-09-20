@@ -4,9 +4,10 @@
  * @author roy
  *
  */
+//require('common:widget/js/slider.js');
 module.exports = {
   init: function () {
-    var $nav = $('.nav li');
+    $('.slider-warp').find('.slider').slider();
 
 
     this.events();

@@ -68,6 +68,7 @@ module.exports.views = {
          * 默认存储与'memory'。设置 false 会关闭预编译缓存，可以设置一个拥有get, set function的对象自定义缓存
          *
          ***************************************************************************/
-        cache: 'memory'
+        cache: 'memory',
+        allowErrors: false
     }
 };

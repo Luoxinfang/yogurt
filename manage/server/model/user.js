@@ -4,17 +4,17 @@
  *
  */
 module.exports = {
-  //»ñÈ¡×éÖ¯ÀàĞÍ [1:¸öÈË,2:¹«Ë¾]
+  //ç”¨æˆ·çš„ç»„ç»‡ç±»å‹ [1:ä¸ªäºº,2:å…¬å¸]
   getOrganizationType: function () {
     var type = 1;
     return type;
   },
-  //»ñÈ¡ÒµÎñÀàĞÍ
+  //è·å–ç”¨æˆ·çš„ä¸šåŠ¡ç±»å‹
   getBusinessType: function () {
     var type = 1;
     return type;
   },
-  //»ñÈ¡×éºÏÀàĞÍ
+  //è·å–ç»„åˆç±»å‹
   getCombinationType: function () {
     return this.getOrganizationType() + '-' + this.getBusinessType();
   },
@@ -22,12 +22,12 @@ module.exports = {
     var prePath = '/manage/user/';
     var type = this.getBusinessType();
     var items = [
-      {id: 'msg', title: 'ÎÒµÄÏûÏ¢', href: prePath + 'msg-list'},
-      {id: 'ref', title: 'ÎÒµÄÍÆ¼ö', href: prePath + 'ref'},
-      {id: 'gain', title: 'ÎÒµÄÊÕÒæ', href: prePath + 'gain'},
-      {id: 'set', title: 'µêÆÌÉèÖÃ', href: prePath + 'settings'},
-      {id: 'info', title: '¸öÈË×ÊÁÏ', href: prePath + 'info'},
-      {id: 'out', title: 'ÍË³ö', href: prePath + 'logout'}
+      {id: 'msg', title: 'æˆ‘çš„æ¶ˆæ¯', href: prePath + 'msg-list'},
+      {id: 'ref', title: 'æˆ‘çš„æ¨è', href: prePath + 'ref'},
+      {id: 'gain', title: 'æˆ‘çš„æ”¶ç›Š', href: prePath + 'gain'},
+      {id: 'set', title: 'é—¨æˆ·è®¾ç½®', href: prePath + 'settings'},
+      {id: 'info', title: 'ä¸ªäººèµ„æ–™', href: prePath + 'info'},
+      {id: 'out', title: 'é€€å‡º', href: prePath + 'logout'}
     ];
     if (type) {
       return items;

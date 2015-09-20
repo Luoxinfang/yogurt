@@ -12,8 +12,8 @@
 		<ul>
 			<li>logo</li>
 			<li>{{moneyInfo.todayIncome}}</li>
-			<li>{{moneyInfo.myCoint}}</li>
-			<li>{{moneyInfo.unsetmentIncome}}</li>
+			<li>{{moneyInfo.myCoin}}</li>
+			<li>{{moneyInfo.notSettlementIncome}}</li>
 			<li>{{moneyInfo.errorKey}}</li>
 		</ul>
 		{% widget 'common:widget/slider/slider.tpl' %}

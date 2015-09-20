@@ -1,5 +1,5 @@
 <!doctype html>
-{%html lang="en" framework="home:static/js/mod.js"%}
+{%html lang="en" framework="common:js/mod.js"%}
 {%head%}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +20,9 @@
 {%endhead%}
 
 {%body%}
-{%widget 'home:widget/topbar/topbar.tpl'%}
+{%widget 'home:widget/common/topbar/topbar.tpl'%}
 {%widget 'common:widget/sidebar/sidebar.tpl'%}
-{%widget 'home:widget/header/header.tpl'%}
+{%widget 'home:widget/common/header/header.tpl'%}
 
 
 <!-- main content -->
@@ -31,7 +31,7 @@
 {%endblock%}
 
 
-{%widget 'home:widget/footer/footer.tpl'%}
+{%widget 'home:widget/common/footer/footer.tpl'%}
 {%endbody%}
 
 {%endhtml%}
