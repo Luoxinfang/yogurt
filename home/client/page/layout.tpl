@@ -11,8 +11,8 @@
 
 {%require "common:css/normalize.css"%}
 {%require "common:css/global.css"%}
-{%require "home:static/css/common.css"%}
-{%require "home:static/css/global.css"%}
+{%require "home:widget/common/css/common.css"%}
+
 
 {%require "common:js/jquery-1.8.0.js"%}
 {%require "common:js/bigpipe.js"%}

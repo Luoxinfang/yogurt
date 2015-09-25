@@ -24,7 +24,6 @@ fis.media('debug').match('*', {
 });
 
 
-
 // 启用 fis-spriter-csssprites 插件
 fis.match('::package', {
   spriter: fis.plugin('csssprites')
@@ -35,7 +34,6 @@ fis.config.set('settings.spriter.csssprites', {
   //使用矩阵排列方式，默认为线性`linear`
   layout: 'matrix'
 });
-
 
 
 //==================
@@ -52,23 +50,30 @@ fis.media('prod').match('/static/**.{css,less,scss,js}', {
   useHash: true
 });
 
-fis.match('::package', {
-  packager: fis.plugin('map', {
-    'pkg/all.js': [
-      'static/css/!(global).css',
-      'widget/!*.js'
-    ]
-  })
-});
+/*fis.match('::package', {
+ packager: fis.plugin('map', {
+ 'pkg/all.js': [
+ 'static/css/!(global).css',
+ 'widget/!*.js'
+ ]
+ })
+ });*/
 
-//把home模块每个页面单独适用的css压缩成对应的css [一个是static下面的css 一个是widget下面的css]
-fis.media('prod').match('/client/{static/css/!(global).css,widget/$1/**.css}',{
+/*
+* 把每个模块对应的css打包 这样会有一个common.css 还会有一个index.css|about.css
+* common.css是当前子app的公用css
+* index.css是当前页面独有的css 这里以index举例
+* */
+
+fis.media('prod').match('widget/(*)/**.css', {
   packTo: 'static/css/$1.css'
 });
 
 
 //把home模块公用的css压缩成base.css
-fis.media('prod').match('/client/{widget/common/**/*.css,static/css/global.css}', {
+/*
+fis.media('prod').match('{widget/common/!**!/!*.css,static/css/global.css}', {
   packTo: 'static/css/base.css'
 });
+*/
 

@@ -17,17 +17,21 @@ fis.media('debug').match('*', {
     to: '/'
   })
 });
+
+
 fis.media('prod').match('*', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://127.0.0.1:3000/yog/upload',
     to: '/'
   })
 });
+//static下面的资源全部加hash
+fis.media('prod').match('/client/**.{css,js}', {
+  useHash: true
+});
 //把home模块公用的css压缩成global.css
-fis.media('prod').match('/client/**/*.css', {
-  useHash: true,
-  useSprite: true,
-  packTo: 'css/global.css'
+fis.media('prod').match('/client/**.css', {
+  packTo: 'client/css/global.css'
 });
 /*
 //cdn设置

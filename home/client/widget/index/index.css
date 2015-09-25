@@ -22,7 +22,7 @@
 .advantages {
   height: 305px;
   padding: 10px 0;
-  background: url("../img/advantages.png") no-repeat center 10px;
+  background: url("img/advantages.png") no-repeat center 10px;
 }
 
 /* 合作方式 */
@@ -37,12 +37,12 @@
 }
 
 .module-ways .way-1 {
-  background: #f0f0f0 url("../img/index-01.jpg") no-repeat center top;
+  background: #f0f0f0 url("img/index-01.jpg") no-repeat center top;
 }
 
 .module-ways .way-2 {
   position: relative;
-  background: url("../img/index-02.jpg") no-repeat center top;
+  background: url("img/index-02.jpg") no-repeat center top;
 }
 
 .module-ways .way-2 .btn-spread {
@@ -54,7 +54,7 @@
 }
 
 .module-ways .way-3 {
-  background: #f0f0f0 url("../img/index-03.jpg") no-repeat center top;
+  background: #f0f0f0 url("img/index-03.jpg") no-repeat center top;
 }
 
 /* 客户端下载 */

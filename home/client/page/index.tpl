@@ -3,7 +3,7 @@
 <!--main content-->
 {% block content %}
 <!--因为block外面的内容不会被渲染 所以需要把css放到这里-->
-{% require "home:static/css/index.css" %}
+{% require "home:widget/index/index.css" %}
 <div class="banner">
 	{% widget 'home:widget/index/login/login.tpl' %}
 	<div class="slider-warp">
@@ -105,6 +105,6 @@
   </div>
   -->
 {%script%}
-require("home:widget/js/index.js").init();
+require("home:widget/index/index.js").init();
 {%endscript%}
 {% endblock %}
