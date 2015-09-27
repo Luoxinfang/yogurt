@@ -1,0 +1,1 @@
+<img src="../../img/weixin-code.jpg" alt="微信服务号" width="118" height="118"/>

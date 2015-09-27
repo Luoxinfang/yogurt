@@ -24,5 +24,5 @@
 </div>
 
 {%script%}
-  require('common:widget/js/slider.js');
+  require('common:js/hz-plugin/slider.js');
 {%endscript%}

@@ -26,13 +26,12 @@
       <a href="/forgot-pwd" class="fr lk-red">忘记密码</a>
     </div>
     <div class="clearfix">
-      <button class="btn-negative btn-fill-negative btn-login fl">登录</button>
+      <button class="btn-negative btn-fill-negative fl" id="btn-login">登录</button>
       <a href="/reg" class="btn-negative fr">注册</a>
     </div>
   </div>
 </form>
-
-
+{%require "common:js/plugin/jquery.cookie.js"%}
 {% script %}
   require("login.js").init();
 {% endscript %}

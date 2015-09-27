@@ -13,6 +13,6 @@
 	</ul>
 </div>
 {% script %}
-	require('common:widget/js/marquee.js');
+	require('common:js/hz-plugin/marquee.js');
 	$('#msg-list').marquee({direction:'up',speed:3000});
 {% endscript %}

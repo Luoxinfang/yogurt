@@ -9,6 +9,12 @@ fis.config.set('namespace', 'common');
 // https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
 fis.config.set('livereload.port', 35729);
 
+
+//将hz下面我们自己的js模块化
+fis.match('/client/js/{hz-lib,hz-plugin}/**.js', {
+  isMod: true
+});
+
 fis.media('debug').match('*', {
   optimizer: null,
   useHash: false,

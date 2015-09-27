@@ -24,8 +24,8 @@
   margin: 2px 4px;
   cursor: pointer;
   overflow: hidden;
-  background: url("../img/piont.png") no-repeat;
-  _background: url("../img/piont.png") no-repeat;
+  background: url("../../img/piont.png") no-repeat;
+  _background: url("../../img/piont.png") no-repeat;
 }
 .slider .index li.on {
   background-position: 0 0px;
