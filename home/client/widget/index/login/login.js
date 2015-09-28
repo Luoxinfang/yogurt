@@ -25,6 +25,7 @@ module.exports = {
 		$('.login-layer').find('.code-con').prop('src', url);
 		$('.login-layer').find('.verify-item').show();
 	},
+	//用户登录
 	login: function (e) {
 		e && e.preventDefault();
 		var that = this,
@@ -71,14 +72,15 @@ module.exports = {
 					}
 					window.location.href = target;
 				} else {
-					var msg = data.exception || '服务器异常';
-					$('.login-layer .tip').html(msg).show();
+					var msg = data.exception || '服务器异常，请稍后再试';
+					$tip.html(msg).show();
 					if (that.getLoginErrorTime() >= 2) {
 						that.showCaptcha();
 					}
 				}
 			},
 			error: function (jqXHR, textStatus, errorThrown) {
+				$tip.html('服务器异常，请稍后再试').show();
 			}
 		});
 	},
@@ -87,7 +89,7 @@ module.exports = {
 		$('.code-con').attr('src', url);
 	},
 	event: function () {
-		$('.btn-login').on('click', this.login);
+		$('#btn-login').on('click', $.proxy(this.login, this));
 		$('.refresh-captcha,.code-con').on('click', this.updateCaptcha)
 	}
 };
