@@ -32,13 +32,14 @@ fis.media('prod').match('*', {
   })
 });
 //static下面的资源全部加hash
-fis.media('prod').match('/client/**.{css,js}', {
+fis.media('prod').match('client/**.{css,js}', {
   useHash: true
 });
 //把home模块公用的css压缩成global.css
-fis.media('prod').match('/client/**.css', {
+fis.media('prod').match('client/**.css', {
   packTo: 'client/css/global.css'
 });
+
 /*
 //cdn设置
 fis.match('/client/js/!*.js', {

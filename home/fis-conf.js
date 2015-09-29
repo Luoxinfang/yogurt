@@ -64,16 +64,7 @@ fis.media('prod').match('/static/**.{css,less,scss,js}', {
 * common.css是当前子app的公用css
 * index.css是当前页面独有的css 这里以index举例
 * */
-
 fis.media('prod').match('widget/(*)/**.css', {
   packTo: 'static/css/$1.css'
 });
-
-
-//把home模块公用的css压缩成base.css
-/*
-fis.media('prod').match('{widget/common/!**!/!*.css,static/css/global.css}', {
-  packTo: 'static/css/base.css'
-});
-*/
 

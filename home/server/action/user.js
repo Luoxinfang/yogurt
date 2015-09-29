@@ -5,16 +5,16 @@ module.exports = function (req, res, next) {
   req.channel = 'no-info';
   next();
 };
-//login
+//
 module.exports.get = function (req, res, next) {
-  console.log(req.param('userName'));
+  //console.log(req.param('userName'));
   res.json({
     status:'00000'
   });
 };
 //
 module.exports.post = function (req, res, next) {
-  console.log(req.param('userName'));
+  //console.log(req.param('userName'));
   res.json({
     status:'00000'
   });
