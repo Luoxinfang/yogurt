@@ -51,7 +51,7 @@ module.exports = {
 		$.ajax({
 			type: 'post',
 			dataType: 'json',
-			url: '/user',
+			url: '/session',
 			data: {
 				userName: userName,
 				password: password,
