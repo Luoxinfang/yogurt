@@ -20,6 +20,7 @@ var config = {
     rabbitmq: {url: "amqp://it:its123@192.168.10.75:5672/test3", heartbeat: 10},
     rabbiqmqQueue: 'ap-pc-server-jk-test',
     numWorkers: 1,
+    logPath:__dirname + '/logs',
     log4js: {
         appenders: [
             {

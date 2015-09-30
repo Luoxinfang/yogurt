@@ -13,6 +13,7 @@ module.exports = function (req, res) {
     msgList: indexData.msgList,
     sliderList: indexData.sliderList
   }
+  console.log(indexData);
   res.render('home/page/index.tpl', data);
 /*  res.bigpipe.bind('notify-list', function (cb) {
     setTimeout(function () {

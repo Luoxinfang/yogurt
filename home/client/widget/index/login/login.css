@@ -37,11 +37,11 @@
 }
 
 .login-box .name-label {
-    background: url('img/login-name.png?__sprite') no-repeat;
+    background: url('icon/login-name.png?__sprite') no-repeat;
 }
 
 .login-box .password-label {
-    background: url('img/login-password.png?__sprite') no-repeat;
+    background: url('icon/login-password.png?__sprite') no-repeat;
 }
 
 .login-box .login-input {

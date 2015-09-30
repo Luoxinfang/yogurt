@@ -5,7 +5,6 @@
 var H = require('common:js/hz-lib/hz.js');
 module.exports = {
 	init: function () {
-
 		if (this.getLoginErrorTime() > 2) {
 			this.showCaptcha();
 		}
@@ -51,7 +50,7 @@ module.exports = {
 		$.ajax({
 			type: 'post',
 			dataType: 'json',
-			url: '/session',
+			url: '/common/session',
 			data: {
 				userName: userName,
 				password: password,

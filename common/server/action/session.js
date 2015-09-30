@@ -4,7 +4,7 @@
  */
 var model = require('../model/session.js');
 module.exports = function (req, res, next) {
-	console.log('session module');
+
 	next();
 };
 //
@@ -14,10 +14,10 @@ module.exports.get = function (req, res, next) {
 		status: '00000'
 	});
 };
-//新增session 也就登陆
-module.exports.post = function (req, res, next) {
+//login
+module.exports.post = function (req, res, next) {cd
 	var data = {};
-
+	console.log(req.session);
 	if (req.session.login_error_times >= 2) {
 		//如果验证码不正确 就此拦截住
 		if (req.session.captcha && req.session.captcha !== req.body.captcha.toLowerCase()) {
