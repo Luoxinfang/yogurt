@@ -15,7 +15,7 @@ module.exports.get = function (req, res, next) {
 	});
 };
 //login
-module.exports.post = function (req, res, next) {cd
+module.exports.post = function (req, res, next) {
 	var data = {};
 	console.log(req.session);
 	if (req.session.login_error_times >= 2) {

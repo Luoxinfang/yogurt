@@ -20,7 +20,11 @@ module.exports = function (router) {
 
   };
   router.get('*', function (req, res, next) {
-    resObj.nav = nav.getItems(req.originalUrl);
+    var navObj = nav(req.originalUrl);
+    req.public = {
+      nav: navObj
+    };
+    resObj.nav = navObj;
     next();
   });
   //这里没有定义的路由会再次去action文件中查找
