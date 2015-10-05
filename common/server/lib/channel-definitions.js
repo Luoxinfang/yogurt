@@ -1,4 +1,4 @@
-var config = require('./config.js');
+var config = require('../config.js');
 var serverId = config.rabbiqmqQueue;
 exports.classes = [
   //中秋国庆2015

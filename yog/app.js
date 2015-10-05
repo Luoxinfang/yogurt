@@ -13,8 +13,25 @@ var app = yog.bootstrap({
     console.log('plugins load completed');
 });
 
-app.set('port', process.env.PORT || 3000);
+/*------add by user------*/
+var config = yog.require('common/config.js');
+var session = require('express-session');
+var RedisStore = require('connect-redis')(session);
+console.log('---',config.expressSession);
+/*------add by user------*/
 
+app.set('port', process.env.PORT || 3000);
+/*------add by user------*/
+app.use(session({
+  store: new RedisStore(config.expressSession.redis),
+  key: config.expressSession.key,
+  secret: config.expressSession.secret,
+  resave: config.expressSession.resave,
+  saveUninitialized: config.expressSession.saveUninitialized,
+  cookie: config.expressSession.cookie
+}));
+
+/*------add by user------*/
 var server = yog.server = app.listen(app.get('port'), function () {
     console.log('Yog server listening on port ' + server.address().port);
 });

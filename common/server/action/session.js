@@ -17,7 +17,7 @@ module.exports.get = function (req, res, next) {
 //login
 module.exports.post = function (req, res, next) {
 	var data = {};
-	console.log(req.session);
+	console.log(req);
 	if (req.session.login_error_times >= 2) {
 		//如果验证码不正确 就此拦截住
 		if (req.session.captcha && req.session.captcha !== req.body.captcha.toLowerCase()) {

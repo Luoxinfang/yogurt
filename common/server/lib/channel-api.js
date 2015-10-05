@@ -1,5 +1,5 @@
 'use strict';
-var config = require('./config.js');
+var config = require('../config.js');
 var amqpRPC = require('./rpc');
 var log = require('../lib/channel-log.js');
 

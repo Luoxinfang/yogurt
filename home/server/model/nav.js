@@ -1,5 +1,6 @@
 /**
  * @description return the navigation list for home module
+ *
  */
 module.exports = function (url) {
   //copy nav
