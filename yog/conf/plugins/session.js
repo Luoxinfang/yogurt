@@ -4,7 +4,7 @@ var config = yog.require('common/config.js');
 
 
 module.exports.session = {
-	store: config.expressSession.redis,
+	store: '',
 	key: config.expressSession.key,
 	secret: config.expressSession.secret,
 	resave: config.expressSession.resave,
