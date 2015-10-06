@@ -13,6 +13,7 @@ module.exports = function (router) {
   // router.get('/some/:user', router.action('api'));
 
   // or write action directly
+
   // 这里是因为 about,solution等模块没有复杂等业务逻辑 公用代码量多 所以直接在router里面解决他们
   // 这里也有必要注释下 在swig模板中 缺少某个字段 模板引擎不会抛出异常
   var resObj = {

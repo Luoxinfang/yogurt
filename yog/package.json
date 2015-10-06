@@ -18,8 +18,8 @@
     "connect-redis": "^3.0.0",
     "debug": "^2.2.0",
     "debuglog": "1.0.1",
-    "express-session": "^1.11.3",
-    "lodash": "2.4.1",
+    "express-session": "^1.9.3",
+    "lodash": "^2.4.1",
     "log4js": "^0.6.27",
     "node-uuid": "^1.4.3",
     "yog2-kernel": "0.3.3"

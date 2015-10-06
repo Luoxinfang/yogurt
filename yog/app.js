@@ -14,19 +14,7 @@ var app = yog.bootstrap({
 });
 
 /*------add by user------*/
-var config = yog.require('common/config.js');
-var session = require('express-session');
-var RedisStore = require('connect-redis')(session);
 
-
-app.use(session({
-  store: new RedisStore(config.expressSession.redis),
-  key: config.expressSession.key,
-  secret: config.expressSession.secret,
-  resave: config.expressSession.resave,
-  saveUninitialized: config.expressSession.saveUninitialized,
-  cookie: config.expressSession.cookie
-}));
 
 /*------add by user------*/
 
