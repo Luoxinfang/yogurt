@@ -67,4 +67,7 @@ fis.media('prod').match('/static/**.{css,less,scss,js}', {
 fis.media('prod').match('widget/(*)/**.css', {
   packTo: 'static/css/$1.css'
 });
+fis.media('prod').match('widget/(*)/**.js', {
+    packTo: 'static/js/$1.js'
+});
 

@@ -67,7 +67,7 @@ module.exports = {
 					if (target) {
 						target = decodeURIComponent(target);
 					} else {
-						target = '/index';
+						target = '/manage';
 					}
 					window.location.href = target;
 				} else {

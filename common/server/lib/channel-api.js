@@ -5,7 +5,7 @@ var log = require('../lib/channel-log.js');
 
 module.exports = {
   TYPES: {
-    rabbitmq: amqpRPC
+    rabbitMQ: amqpRPC
   },
   enables: {},
   _request: function(cmd, params, callback) {
@@ -21,8 +21,8 @@ module.exports = {
       callback(result);
     });
   },
-  init: function(rpctype, options) {
-    this.enables = this.TYPES[rpctype].init(options);
+  init: function(type, options) {
+    this.enables = this.TYPES[type].init(options);
   },
   login: function(params, callback) {
     this._request('LoginFacade.login', params, callback);

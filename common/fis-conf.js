@@ -24,7 +24,7 @@ fis.media('debug').match('*', {
   })
 });
 
-
+//生产环境设置
 fis.media('prod').match('*', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://127.0.0.1:3000/yog/upload',
@@ -35,13 +35,22 @@ fis.media('prod').match('*', {
 fis.media('prod').match('client/**.{css,js}', {
   useHash: true
 });
-//把home模块公用的css压缩成global.css
+
+//把common模块公用的css压缩成global.css
 fis.media('prod').match('client/**.css', {
   packTo: 'client/css/global.css'
 });
+//把common模块公用的js压缩成lib.js
+fis.media('prod').match('client/js/{lib,plugin}/*.js', {
+  packTo: 'client/js/lib.js'
+});
+fis.media('prod').match('client/js/{hz-lib,hz-plugin}/*.js', {
+	packTo: 'client/js/hz.js'
+});
 
-/*
 //cdn设置
+/**
 fis.match('/client/js/!*.js', {
   domain: '//cdn.hzins.com'
-});*/
+});
+*/

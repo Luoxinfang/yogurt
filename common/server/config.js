@@ -16,8 +16,8 @@ var config = {
     cookie: {domain: '.hzins.com'},
     redis: {host: '192.168.10.41', port: 6379, prefix: 'nodejs_sess:', ttl: 240000}
   },
-  rabbitmq: {url: "amqp://it:its123@192.168.10.75:5672/test3", heartbeat: 10},
-  rabbiqmqQueue: 'ap-pc-server-jk-test',
+  rabbitMQ: {url: "amqp://it:its123@192.168.10.75:5672/test3", heartbeat: 10},
+  rabbitMQQueue: 'ap-pc-server-jk-test',
   numWorkers: 1,
   logPath: __dirname + '/logs',
   log4js: {
