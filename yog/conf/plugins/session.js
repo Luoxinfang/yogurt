@@ -1,8 +1,8 @@
-
-
 var config = yog.require('common/config.js');
+/*var session = require('express-session');
+var RedisStore = require('connect-redis')(session);*/
 
-
+//console.log('RedisStore',RedisStore);
 module.exports.session = {
 	store: '',
 	key: config.expressSession.key,
