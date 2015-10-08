@@ -16,9 +16,9 @@ var app = yog.bootstrap({
 /*------add by user------*/
 var config = yog.require('common/config.js');
 var channel = yog.require('common/lib/channel-api.js');
-channel.init('rabbitmq', {
-  conn_options: config.rabbitmq
-});
+/*channel.init('rabbitmq', {
+  conn_options: ''||config.rabbitmq
+});*/
 /*------add by user------*/
 
 app.set('port', process.env.PORT || 3000);

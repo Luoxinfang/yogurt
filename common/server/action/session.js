@@ -3,6 +3,8 @@
  * @description 这个路由处理session 如登陆 退出等
  */
 var model = require('../model/session.js');
+var modelTest = require();
+
 module.exports = function (req, res, next) {
 
   next();
@@ -30,6 +32,7 @@ module.exports.post = function (req, res, next) {
     //将数据传递给模型处理
     model.login(user, function (rs) {
       console.log('rs:',rs);
+      rs.json(rs);
     });
   }
 };

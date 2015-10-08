@@ -98,15 +98,15 @@
     //4.如果只是当前页面使用了bigpipe技术 记得在页面中单独声明对bigpipe.js的依赖
     -->
 
-{#  <div class="notify-list-warp">
-	<div class="loading">正在加载数据...</div>
-	{% spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async" %}
+  <div class="notify-list-warp">
+    <div class="loading">正在加载数据...</div>
+    {%spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async"%}
   </div>
 
   <div class="bigpipe-test-warp">
-	<div class="loading">测试多个bigpipe模块</div>
-	{% spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async" %}
-  </div>#}
+    <div class="loading">测试多个bigpipe模块</div>
+    {%spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async"%}
+  </div>
 
   {%script%}
   require("home:widget/index/index.js").init();

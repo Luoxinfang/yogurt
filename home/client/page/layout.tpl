@@ -15,7 +15,7 @@
 
 
 {%require "common:js/lib/jquery-1.8.0.js"%}
-{#{%require "common:js/lib/bigpipe.js"%}#}
+{%require "common:js/lib/bigpipe.js"%}
 
 {%endhead%}
 
