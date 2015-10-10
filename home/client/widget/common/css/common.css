@@ -83,3 +83,118 @@ textarea:-ms-input-placeholder {
 .btn-fill-negative:hover {
   background-color: #ce1c1f;
 }
+
+.ad-banner {
+  height: 400px;
+  background: no-repeat center top;
+  overflow: hidden;
+}
+.ui-module {
+  padding: 35px 0 0;
+}
+.module-join {
+  padding: 40px 0;
+}
+.module-case {
+  border-top: 3px solid #f6f6f6;
+}
+.ui-sub-title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+}
+.join-process {
+  margin: 0 64px;
+  margin-bottom: 45px;
+  padding: 105px 0 0;
+  background: url('../icon/join-process.png') no-repeat center top;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.join-process li {
+  float: left;
+  _display: inline;
+  width: 25%;
+}
+.module-join .btn-negative {
+  width: 250px;
+  padding: 20px 0;
+  font-size: 26px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  _font-size: 12px;
+}
+.table-case {
+  width: 100%;
+}
+.table-case td {
+  width: 25%;
+  border: 1px solid #f6f6f6;
+}
+.partner-sprite, .table-case .partner-1 a, .table-case .partner-2 a, .table-case .partner-3 a, .table-case .partner-4 a, .table-case .partner-5 a, .table-case .partner-6 a, .table-case .partner-7 a, .table-case .partner-8 a {
+  background-image: url('../icon/partner-see.png');
+  background-repeat: no-repeat;
+}
+.table-case a {
+  display: block;
+  height: 93px;
+  cursor: default;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+.table-case .partner-1 a {
+  background-position: 0 -558px;
+}
+.table-case .partner-1 a:hover, .table-case .partner-1 a.landtu-hover {
+  background-position: 0 -651px;
+}
+.table-case .partner-2 a {
+  background-position: 0 -372px;
+}
+.table-case .partner-2 a:hover, .table-case .partner-2 a.huway-hover {
+  background-position: 0 -465px;
+}
+.table-case .partner-3 a {
+  background-position: 0 -186px;
+}
+.table-case .partner-3 a:hover, .table-case .partner-3 a.huijr-hover {
+  background-position: 0 -279px;
+}
+.table-case .partner-4 a {
+  background-position: 0 -1302px;
+}
+.table-case .partner-4 a:hover, .table-case .partner-4 a.zxtx-hover {
+  background-position: 0 -1395px;
+}
+.table-case .partner-5 a {
+  background-position: 0 -930px;
+}
+.table-case .partner-5 a:hover, .table-case .partner-5 a.qunar-hover {
+  background-position: 0 -1023px;
+}
+.table-case .partner-6 a {
+  background-position: 0 -744px;
+}
+.table-case .partner-6 a:hover, .table-case .partner-6 a.maidou-hover {
+  background-position: 0 -837px;
+}
+.table-case .partner-7 a {
+  background-position: 0 0;
+}
+.table-case .partner-7 a:hover, .table-case .partner-7 a.huanyou-hover {
+  background-position: 0 -93px;
+}
+.table-case .partner-8 a {
+  background-position: 0 -1116px;
+}
+.table-case .partner-8 a:hover, .table-case .partner-8 a.wyoffer-hover {
+  background-position: 0 -1209px;
+}
+

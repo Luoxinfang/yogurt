@@ -1,73 +1,248 @@
-/*.notify-list-warp{
-  min-height: 120px;
-}*/
-.banner{
-  position: relative;
+@charset "UTF-8";
+.pingtai-banner {
+  background-image: url('./icon/banner-platform.jpg');
 }
 
-/* 最新公告 */
-.notice, .notice .msg-list {
-  height: 42px;
-  line-height: 42px;
+/* 平台介绍 */
+.module-introduce .introduce-des {
+  margin: 0 0 40px 35px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.module-introduce .office-img {
+  float: right;
+  padding: 10px 0 0 125px;
+  vertical-align: bottom;
+}
+
+/* 优势能力 */
+.module-advantage {
+  height: 470px;
+  padding: 50px 0 0;
+  background: url('./icon/module-advantage.jpg') no-repeat center top;
+  color: #fff;
+}
+.module-advantage .ui-sub-title {
+  color: #fff;
+}
+
+.advantage-content {
+  padding: 38px 0 0;
+}
+.advantage-content .slider-content-outer {
+  margin: 0 125px;
+}
+.advantage-content .slider-content {
+  *zoom: 1;
+}
+.advantage-content .slider-content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.a-slider-tab {
+  width: 504px;
+  margin: 0 auto 58px;
+}
+.a-slider-tab li {
+  float: left;
+  _display: inline;
+  width: 168px;
+}
+.a-slider-tab a {
+  display: block;
+  color: #fff;
+}
+.a-slider-tab a .iconfont {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 44px;
+  border: 1px solid #acafb4;
+  font-size: 32px \9;
+  border: none \9;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.a-slider-tab a .text {
+  position: relative;
+  display: block;
+  width: 100px;
+  margin: 15px auto 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.a-slider-tab .active a,
+.a-slider-tab a:hover {
+  color: #fff;
+  *zoom: 1;
+}
+.a-slider-tab .active a .iconfont,
+.a-slider-tab a:hover .iconfont {
+  border-color: #fff;
+}
+.a-slider-tab .active a .text,
+.a-slider-tab a:hover .text {
+  background-color: #1e2736;
+}
+.a-slider-tab .active a .text:before,
+.a-slider-tab a:hover .text:before {
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  top: -14px;
+  margin-left: -7px;
+  border: 7px solid #1e2736;
+  border-color: transparent transparent #1e2736;
+}
+
+.advantages-list {
+  float: left;
+  margin: 23px 0 0;
+}
+.advantages-list li {
+  line-height: 20px;
+  margin-bottom: 10px;
+  *list-style: inside disc;
+}
+.advantages-list li:before {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 14px;
+  background-color: #fff;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.advantages-img {
+  float: right;
+}
+.advantages-img img {
+  width: 290px;
+  height: 185px;
+}
+
+/* 平台特色 */
+.module-feature {
+  padding: 40px 0;
+}
+
+.features {
   overflow: hidden;
 }
-
-/* 企业优势 */
-.advantages {
-  height: 305px;
-  padding: 10px 0;
-  background: url("../img/advantages.png") no-repeat center 10px;
+.features .feature-item {
+  float: left;
+  width: 313px;
+  height: 188px;
+  padding-top: 30px;
+  margin-right: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+.features .feature-item-3 {
+  margin-right: 0;
+}
+.features .icon-1, .features .icon-2, .features .icon-3 {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  margin-top: 30px;
+  background: url('./icon/ap-pc-icons.png') no-repeat;
+  _background: url('./icon/ap-pc-icons-8.png') no-repeat;
+}
+.features .icon-1 {
+  background-position: 0 -150px;
+}
+.features .icon-2 {
+  background-position: -150px -150px;
+}
+.features .icon-3 {
+  background-position: -300px -150px;
 }
 
 /* 合作方式 */
-.module-ways .way-box {
-  height: 438px;
-}
-.module-ways .way-1,
-.module-ways .way-2,
-.module-ways .way-3 {
-  height: 438px;
-}
-.module-ways .way-1 {
-  background: #f0f0f0 url("../img/index-01.jpg") no-repeat center top;
-}
-.module-ways .way-2 {
+.cooperate {
   position: relative;
-  background: url("../img/index-02.jpg") no-repeat center top;
+  float: left;
+  width: 484px;
+  height: 316px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
-.module-ways .way-2 .btn-spread {
+.cooperate .step-1 {
+  width: 140px;
+  height: 52px;
+  margin: 88px auto;
+  padding-top: 88px;
+  background: url('./icon/ap-pc-icons.png') no-repeat;
+  _background: url('./icon/ap-pc-icons-8.png') no-repeat;
+}
+.cooperate .step-2 {
   position: absolute;
-  top: 327px;
-  left: 581px;
-  width: 150px;
-  padding: 9px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 316px;
+  background: #000;
+  z-index: 3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
-.module-ways .way-3 {
-  background: #f0f0f0 url("../img/index-03.jpg") no-repeat center top;
+.cooperate .inner-box {
+  padding: 50px 0 0;
 }
-/* 客户端下载 */
-.download {
-  height: 192px;
-  padding: 28px 0 0;
+
+.cooperate-1 {
+  margin: 0 32px 32px 0;
+  background: url('./icon/platform-04.jpg') no-repeat 0 0;
 }
-.download .box1 {
-  width: 135px;
-  margin-right: 133px;
-  font-size: 14px;
-  line-height: 30px;
-  overflow: hidden;
+.cooperate-1 .step-1 {
+  background-position: 0 0;
 }
-.download .box2, .download .box3 {
-  width: 298px;
-  overflow: hidden;
+
+.cooperate-2 {
+  margin: 0 0 32px 0;
+  background: url('./icon/platform-05.jpg?1442902041') no-repeat 0 0;
 }
-.download .box2 {
-  margin-right: 130px;
+.cooperate-2 .step-1 {
+  background-position: -150px 0;
 }
-.download .btn-negative {
-  width: 150px;
-  padding: 9px 0;
+
+.cooperate-3 {
+  margin: 0 32px 40px 0;
+  background: url('./icon/platform-06.jpg?1442902084') no-repeat 0 0;
 }
-#notify-list{
-  min-height: 120px;
+.cooperate-3 .step-1 {
+  background-position: -300px 0;
+}
+
+.cooperate-4 {
+  margin: 0 0 40px;
+  background: url('./icon/platform-07.jpg?1442902132') no-repeat 0 0;
+}
+.cooperate-4 .step-1 {
+  background-position: -450px 0;
 }
