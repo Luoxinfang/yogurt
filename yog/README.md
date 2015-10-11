@@ -6,5 +6,5 @@ Base on [yog2-kernel](https://github.com/fex-team/yog2-kernel)
 
 ```bash
 npm i
-npm run-script debug
+npm run debug
 ```
