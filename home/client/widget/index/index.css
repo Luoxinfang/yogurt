@@ -37,12 +37,12 @@
 }
 
 .module-ways .way-1 {
-  background: #f0f0f0 url("icon/index-01.jpg") no-repeat center top;
+  background: #f0f0f0 url("icon/index-01.jpg?__sprite") no-repeat center top;
 }
 
 .module-ways .way-2 {
   position: relative;
-  background: url("icon/index-02.jpg") no-repeat center top;
+  background: url("icon/index-02.jpg?__sprite") no-repeat center top;
 }
 
 .module-ways .way-2 .btn-spread {
@@ -54,7 +54,7 @@
 }
 
 .module-ways .way-3 {
-  background: #f0f0f0 url("icon/index-03.jpg") no-repeat center top;
+  background: #f0f0f0 url("icon/index-03.jpg?__sprite") no-repeat center top;
 }
 
 /* 客户端下载 */

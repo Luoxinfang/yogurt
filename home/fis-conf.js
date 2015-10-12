@@ -50,15 +50,6 @@ fis.media('prod').match('/static/**.{css,less,scss,js}', {
   useHash: true
 });
 
-/*fis.match('::package', {
- packager: fis.plugin('map', {
- 'pkg/all.js': [
- 'static/css/!(global).css',
- 'widget/!*.js'
- ]
- })
- });*/
-
 /*
 * 把每个模块对应的css打包 这样会有一个common.css 还会有一个index.css|about.css
 * common.css是当前子app的公用css

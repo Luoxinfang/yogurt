@@ -107,7 +107,7 @@ textarea:-ms-input-placeholder {
   margin: 0 64px;
   margin-bottom: 45px;
   padding: 105px 0 0;
-  background: url('../icon/join-process.png') no-repeat center top;
+  background: url('../icon/join-process.png?__sprite') no-repeat center top;
   text-align: center;
   color: #333;
   font-size: 16px;
@@ -137,8 +137,7 @@ table {
   border: 1px solid #f6f6f6;
 }
 .partner-sprite, .table-case .partner-1 a, .table-case .partner-2 a, .table-case .partner-3 a, .table-case .partner-4 a, .table-case .partner-5 a, .table-case .partner-6 a, .table-case .partner-7 a, .table-case .partner-8 a {
-  background-image: url('../icon/partner-see.png');
-  background-repeat: no-repeat;
+  background: url('../icon/partner-see.png?__sprite') no-repeat;
 }
 .table-case a {
   display: block;

@@ -17,8 +17,8 @@
   text-align: center;
   font-size: 14px;
   color: #fff;
-  background: url('./icon/ap-pc-icons.png') no-repeat;
-  _background: url('./icon/ap-pc-icons-8.png') no-repeat;
+  background: url('../common/icon/ap-pc-icons.png') no-repeat;
+  _background: url('../common/icon/ap-pc-icons-8.png') no-repeat;
 }
 .solution-banner .project-list .item-1 {
   left: 0;

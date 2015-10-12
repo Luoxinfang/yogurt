@@ -166,8 +166,8 @@
   width: 150px;
   height: 80px;
   margin-top: 30px;
-  background: url('./icon/ap-pc-icons.png') no-repeat;
-  _background: url('./icon/ap-pc-icons-8.png') no-repeat;
+  background: url('../common/icon/ap-pc-icons.png') no-repeat;
+  _background: url('../common/icon/ap-pc-icons-8.png') no-repeat;
 }
 .features .icon-1 {
   background-position: 0 -150px;
@@ -194,8 +194,8 @@
   height: 52px;
   margin: 88px auto;
   padding-top: 88px;
-  background: url('./icon/ap-pc-icons.png') no-repeat;
-  _background: url('./icon/ap-pc-icons-8.png') no-repeat;
+  background: url('../common/icon/ap-pc-icons.png?__sprite') no-repeat;
+  _background: url('../common/icon/ap-pc-icons-8.png?__sprite') no-repeat;
 }
 .cooperate .step-2 {
   position: absolute;
@@ -217,7 +217,7 @@
 
 .cooperate-1 {
   margin: 0 32px 32px 0;
-  background: url('./icon/platform-04.jpg') no-repeat 0 0;
+  background: url('./icon/platform-04.jpg?__sprite') no-repeat 0 0;
 }
 .cooperate-1 .step-1 {
   background-position: 0 0;
@@ -225,7 +225,7 @@
 
 .cooperate-2 {
   margin: 0 0 32px 0;
-  background: url('./icon/platform-05.jpg?1442902041') no-repeat 0 0;
+  background: url('./icon/platform-05.jpg?__sprite') no-repeat 0 0;
 }
 .cooperate-2 .step-1 {
   background-position: -150px 0;
@@ -233,7 +233,7 @@
 
 .cooperate-3 {
   margin: 0 32px 40px 0;
-  background: url('./icon/platform-06.jpg?1442902084') no-repeat 0 0;
+  background: url('./icon/platform-06.jpg?__sprite') no-repeat 0 0;
 }
 .cooperate-3 .step-1 {
   background-position: -300px 0;
@@ -241,7 +241,7 @@
 
 .cooperate-4 {
   margin: 0 0 40px;
-  background: url('./icon/platform-07.jpg?1442902132') no-repeat 0 0;
+  background: url('./icon/platform-07.jpg?__sprite') no-repeat 0 0;
 }
 .cooperate-4 .step-1 {
   background-position: -450px 0;
