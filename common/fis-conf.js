@@ -72,8 +72,8 @@ fis.media('prod').match('client/js/{hz-lib,hz-plugin}/*.js', {
 
 
 //cdn设置
-/**
-fis.match('/client/js/!*.js', {
-  domain: '//cdn.hzins.com'
+/*
+fis.match('/client/css/!*.css', {
+  domain: '//baidu.com'
 });
 */

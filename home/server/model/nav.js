@@ -12,6 +12,7 @@ module.exports = function (url) {
       nav[i]['current'] = true;
       return true;
     }
+    
   });
   return nav;
 };

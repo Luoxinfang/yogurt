@@ -1,7 +1,6 @@
 <!--
   message ui 组件
   @author roy
-  @require marquee.css
 -->
 <div class="msg-list" id="msg-list">
 	<ul>
