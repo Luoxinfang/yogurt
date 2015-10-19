@@ -28,7 +28,7 @@ module.exports.http = {
     'ral',
     'views',
     'methodOverride',
-    'session',
+    'session',//session 中间件
     'dispatcher',
     'notFound',
     'error',

@@ -29,6 +29,7 @@ module.exports = function (req, res) {
         }]
       });
     }, 3000);
+
   });
   res.bigpipe.bind('bigpipe-test', function (cb) {
     setTimeout(function () {
