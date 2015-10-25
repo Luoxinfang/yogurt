@@ -11,12 +11,12 @@ module.exports = {
 		if (user.userName != '7411') {
 			rs = {
 				status: '11111',
-				exception: 'ÓÃ»§²»´æÔÚ'
+				exception: 'ç”¨æˆ·ä¸å­˜åœ¨'
 			};
 		} else if (user.password != '123'){
 			rs = {
 				status: '11112',
-				exception: 'ÃÜÂë´íÎó'
+				exception: 'å¯†ç é”™è¯¯'
 			};
 		}
 		callback(rs);

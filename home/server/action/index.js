@@ -1,16 +1,17 @@
 //index action
 var _ = require('lodash');
+
 module.exports = function (req, res) {
 
   //跨模块引用 引用common模块下面的app.js
   var app = yog.require('common/model/app.js');
   var nav = require('../model/nav.js');
   var util = require('../lib/util.js');
-  var indexData = require('../model/index');
+  var model = yog.require('common/lib/loader-model.js')();
   var resObj = _.extend(req.public, {
     app: app.getInfo(),
-    msgList: indexData.msgList,
-    sliderList: indexData.sliderList
+    msgList: model.msgList,
+    sliderList: model.sliderList
   });
   //console.log('indexData:',resObj);
   res.render('home/page/index.tpl', resObj);

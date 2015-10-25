@@ -1,7 +1,7 @@
 <!--
   message ui 组件
   @author roy
-  @require 'common:js/test/hello.js'
+  @/require 'common:js/test/hello.js'
 -->
 <div class="msg-list" id="msg-list">
 	<ul>

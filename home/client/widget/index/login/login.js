@@ -83,6 +83,7 @@ module.exports = {
 			}
 		});
 	},
+	//更新验证码
 	updateCaptcha: function () {
 		var url = '/shortcut/verify_code?' + (+new Date());
 		$('.code-con').attr('src', url);

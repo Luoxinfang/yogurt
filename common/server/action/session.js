@@ -2,11 +2,12 @@
  * @author roy
  * @description 这个路由处理session 如登陆 退出等
  */
-var model = require('../model/session.js');
-//var model = require('../test/session.js');
+
+
+var model = yog.require('common/lib/loader-model.js')();
+
 
 module.exports = function (req, res, next) {
-
 	next();
 };
 //
