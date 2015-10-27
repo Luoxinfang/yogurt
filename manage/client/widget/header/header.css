@@ -1,19 +1,193 @@
+
 .header {
   width: 100%;
   height: 60px;
   background-color: #cc3333;
 }
-
-.header .warp {
-  height: 60px;
-  margin: 0 auto;
+.header .logo {
+  margin-top: 14px;
+  width: 140px;
+  height: 32px;
+  background-image: url("../img/logo.png");
 }
-
-.logo {
-  height: 60px;
+.header .nav {
+  margin-left: 36px;
   line-height: 60px;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", tahoma, arial, SimSun;
 }
-
-.logo img {
-  vertical-align: middle;
+.header .nav a {
+  width: 76px;
+}
+.header .nav a:visited {
+  color: #ffffff;
+}
+.header .nav .item {
+  text-align: center;
+  width: 76px;
+  float: left;
+  cursor: pointer;
+}
+.header .nav .item:not(:first-child) {
+  margin-left: 12px;
+}
+.header .nav .item:hover {
+  background-color: #B81414;
+}
+.header .nav .curr {
+  background-color: #B81414;
+}
+.header .nav .my {
+  position: relative;
+}
+.header .nav .my:after {
+  position: absolute;
+  top: 28px;
+  left: 58px;
+}
+.header .nav .my .con {
+  z-index: 10000;
+  position: absolute;
+  top: 52px;
+  left: -20px;
+}
+.header .nav .my .con .pt1 {
+  height: 8px;
+}
+.header .nav .my .con .pt2 {
+  text-align: center;
+  width: 120px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.header .nav .my .con .pt2 a:visited {
+  color: #666666;
+}
+.header .nav .my .con .arrow-up {
+  position: relative;
+  top: -28px;
+  *top: 0px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #cccccc transparent;
+  border-top: none;
+}
+.header .nav .my .con .arrow-up .arrow-con {
+  position: absolute;
+  top: 2px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #ffffff transparent;
+  border-top: none;
+}
+.header .nav .my .list li {
+  height: 30px;
+  line-height: 30px;
+}
+.header .nav .my .list li:hover {
+  color: #333333;
+  background-color: #f1f1f1;
+}
+.header .search {
+  position: relative;
+  top: 14px;
+  left: 205px;
+  width: 214px;
+  display: table;
+}
+.header .search .ipt {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  width: 162px;
+  padding: 0px 12px;
+  display: table-cell;
+  border: none;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.header .search .btn-search {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  display: table-cell;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: white;
+}
+.header .td {
+  position: relative;
+  top: 22px;
+  right: 0;
+  width: 40px;
+  height: 45px;
+  z-index: 100;
+}
+.header .td .arrow-down, .header .td .nav .my:after, .header .nav .td .my:after {
+  position: relative;
+  top: -8px;
+  left: 5px;
+}
+.header .td .con {
+  position: absolute;
+  top: 30px;
+  left: -260px;
+  height: 230px;
+  z-index: 100;
+}
+.header .td .con .pt1 {
+  height: 8px;
+}
+.header .td .con .pt2 {
+  width: 260px;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+}
+.header .td .con .arrow-up {
+  position: relative;
+  top: -4px;
+  left: 276px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #cccccc transparent;
+  border-top: none;
+}
+.header .td .con .arrow-up .arrow-con {
+  position: relative;
+  top: 2px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 8px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #ffffff transparent;
+  border-top: none;
+}
+.header .td .con .row {
+  height: 100px;
+}
+.header .td .con .icon {
+  width: 100px;
+  height: 100px;
 }

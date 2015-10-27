@@ -1,0 +1,51 @@
+.footer {
+  height: 143px;
+  padding: 35px 0 0;
+  background: #323232;
+}
+
+.foot-info {
+  width: 590px;
+  margin-right: 108px;
+}
+.foot-info .links {
+  height: 40px;
+  padding-bottom: 2px;
+  margin-bottom: 18px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 40px;
+  border-bottom: 1px solid #777;
+}
+.foot-info .links a {
+  color: #bbb;
+}
+.foot-info .links a:hover {
+  color: #fff;
+}
+.foot-info .copys {
+  color: #777;
+  line-height: 20px;
+}
+.foot-info .copys a {
+  color: #777;
+}
+.foot-info .copys a:hover {
+  color: #fff;
+}
+
+.foot-contacts {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 30px;
+}
+.foot-contacts .foot-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  text-align: center;
+  list-height: 28px;
+  border: 1px solid #5b5b5b;
+  vertical-align: middle;
+}

@@ -9,8 +9,9 @@
 <link rel="icon" href="/static/favicon.ico">
 <title>{{ app.title }}</title>
 
-{% require "common:css/normalize.css" %}
-{% require "manage:static/css/common.css" %}
+{%require "common:css/normalize.css"%}
+{%require "common:css/global.css"%}
+{%require "manage:widget/common/css/common.css"%}
 
 {% require "common:js/jquery-1.8.0.js" %}
 {% require "common:js/bigpipe.js" %}
@@ -20,12 +21,13 @@
 {% body %}
 
 {% widget 'manage:widget/header/header.tpl' %}
-
 <!-- main content -->
-{% block content %} {% endblock %}
+{% block content %}
+	Мгдижа...
+{% endblock %}
 
 
-{% widget 'home:widget/footer/main.tpl' %}
+{% widget 'manage:widget/footer/footer.tpl' %}
 {% endbody %}
 
 {% endhtml %}

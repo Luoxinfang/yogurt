@@ -24,12 +24,10 @@
 {%widget 'common:widget/sidebar/sidebar.tpl'%}
 {%widget 'home:widget/common/header/header.tpl'%}
 
-
 <!-- main content -->
 {%block content%}
 	default content
 {%endblock%}
-
 
 {%widget 'home:widget/common/footer/footer.tpl'%}
 {%endbody%}
