@@ -1,5 +1,5 @@
 <!doctype html>
-{% html lang="en" framework="home:static/js/mod.js" %}
+{% html lang="en" framework="common:js/lib/mod.js" %}
 {% head %}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
 {%require "common:css/global.css"%}
 {%require "manage:widget/common/css/common.css"%}
 
-{% require "common:js/jquery-1.8.0.js" %}
-{% require "common:js/bigpipe.js" %}
+{%require "common:js/lib/jquery-1.8.0.js"%}
+{%require "common:js/lib/bigpipe.js"%}
 
 {% endhead %}
 
@@ -23,7 +23,7 @@
 {% widget 'manage:widget/common/header/header.tpl' %}
 <!-- main content -->
 {% block content %}
-	加载中...
+	加载�?...
 {% endblock %}
 
 

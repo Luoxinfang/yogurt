@@ -14,7 +14,7 @@ module.exports = {
   },
   //bigpipe loaded 
   pageletdone: function () {
-    //var $loading = $('.' + arguments[1].id + '-warp').find('.loading');
+    //var $loading = $('.' + arguments[1].id + '-wrap').find('.loading');
     //$loading.hide();
   },
   //events

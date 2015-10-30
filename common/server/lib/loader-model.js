@@ -12,7 +12,7 @@ module.exports = function () {
   });
   //把action 替换成对应的路径
   var modulePath = callerPath.replace('action', dataPath);
-  console.log(modulePath);
+  //console.log(modulePath);
   return yog.require(modulePath);
   //上面的做法是希望直接返回model 但是modelPath的路径就要yog的module的路径 且在执行期
 };

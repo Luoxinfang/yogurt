@@ -23,7 +23,7 @@ channel.init('rabbitMQ', {
 	}
 });
 
-/*------end 用户添加的设置------*/
+/*---end 用户添加的设置------*/
 
 app.set('port', process.env.PORT || 3000);
 

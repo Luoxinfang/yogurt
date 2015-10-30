@@ -7,6 +7,8 @@
     <h1 class="header-logo fl">
       <a href="/" class="ap-logo ti">慧择联盟</a>
     </h1>
-    {%widget 'home:widget/common/nav/nav.tpl'%}
+    <div class="nav-wrap fr">
+      {%widget 'home:widget/common/nav/nav.tpl'%}
+    </div>
   </div>
 </div>

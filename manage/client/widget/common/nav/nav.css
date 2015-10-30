@@ -1,23 +1,30 @@
 .ui-nav {
   overflow: hidden;
-  color: #006600;
+	font-size: 16px;
+	line-height: 60px;
+  font-family: "Microsoft YaHei", tahoma, arial, SimSun;
 }
 
 .ui-nav-item {
-  float: left;
-  height: 100px;
+	float: left;
 }
 
+.ui-nav-item:not(:first-child) {
+	margin-left: 12px;
+}
 .ui-nav-item a {
-  display: inline-block;
-  padding: 30px 25px;
-  font-size: 16px;
-  line-height: 40px;
-  text-decoration: none;
+	display: inline-block;
+	width: 76px;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
 }
-
+.ui-nav-item a:hover{
+	background-color: #B81414;
+}
 .ui-nav-cur a {
-  padding: 25px 30px 30px;
-  color: #e4393c;
-  border-top: 5px solid #e4393c;
+	width: 76px;
+	color: #ffffff;
+	border-top: 5px solid #e4393c;
 }

@@ -6,7 +6,7 @@
 	{% require "home:widget/index/index.css" %}
 	<div class="banner">
 		{% widget 'home:widget/index/login/login.tpl' %}
-		<div class="slider-warp">
+		<div class="slider-wrap">
 			{% widget 'common:widget/slider/slider.tpl' %}
 		</div>
 	</div>
@@ -15,7 +15,7 @@
 		<div class="row clearfix">
 			<i class="iconfont fl fc-red fz-16 mr10">&#xe65e;</i>
 
-			<div class="msg-warp fl">
+			<div class="msg-wrap fl">
 				{% widget 'common:widget/message/message.tpl' %}
 			</div>
 			<a href="/notify" class="fr lk-red">更多</a>
@@ -54,7 +54,7 @@
 					1、订单管理更轻松；<br/>2、消息处理更及时；<br/> 3、掌上拓业更方便；<br/> 4、移动管理更高效。
 				</div>
 				<div class="fl box2">
-					<div class="client-code-warp fl mr20">
+					<div class="client-code-wrap fl mr20">
 						{% widget 'common:widget/element/client-code.tpl' %}
 					</div>
 					<div class="fl">
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="fl box3">
-					<div class="we-chart-warp fl mr20">
+					<div class="we-chart-wrap fl mr20">
 						{% widget 'common:widget/element/we-chart-code.tpl' %}
 					</div>
 					<div class="fl">
@@ -97,12 +97,12 @@
 			3.在router中添加对该bigpipe组件的绑定
 			//4.如果只是当前页面使用了bigpipe技术 记得在页面中单独声明对bigpipe.js的依赖
 			-->
-		<div class="notify-list-warp">
+		<div class="notify-list-wrap">
 			<div class="loading">正在加载数据...</div>
 			{%spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async"%}
 		</div>
 
-		<div class="bigpipe-test-warp">
+		<div class="bigpipe-test-wrap">
 			<div class="loading">测试多个bigpipe模块</div>
 			{%spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async"%}
 		</div>
