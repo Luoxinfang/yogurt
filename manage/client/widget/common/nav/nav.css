@@ -1,0 +1,23 @@
+.ui-nav {
+  overflow: hidden;
+  color: #006600;
+}
+
+.ui-nav-item {
+  float: left;
+  height: 100px;
+}
+
+.ui-nav-item a {
+  display: inline-block;
+  padding: 30px 25px;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.ui-nav-cur a {
+  padding: 25px 30px 30px;
+  color: #e4393c;
+  border-top: 5px solid #e4393c;
+}

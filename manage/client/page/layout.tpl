@@ -20,14 +20,14 @@
 
 {% body %}
 
-{% widget 'manage:widget/header/header.tpl' %}
+{% widget 'manage:widget/common/header/header.tpl' %}
 <!-- main content -->
 {% block content %}
-	¼ÓÔØÖĞ...
+	åŠ è½½ä¸­...
 {% endblock %}
 
 
-{% widget 'manage:widget/footer/footer.tpl' %}
+{% widget 'manage:widget/common/footer/footer.tpl' %}
 {% endbody %}
 
 {% endhtml %}

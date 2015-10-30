@@ -17,7 +17,7 @@ module.exports.getItems = function () {
     children: null
   }, {
     title: '我的',
-    href: '/user',
+    href: '/my',
     children: user.getNavItem()
   }]
 };
