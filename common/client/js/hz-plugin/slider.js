@@ -20,7 +20,7 @@
           time = opt.time || 5000,//间隔时间
           hover = opt.hover || false,//是否支持鼠标悬停
           $list = $(that).find('.item') || $(that).find('.i') || $(that).child('ul>li'), //元素的dom
-          $index = $(that).find('.index ul'),//索引的dom
+          $index = $(that).find('.index'),//索引的dom
           length = $list.length, //元素的长度
           currIndex = 0, //
           slideFunc = getSlideFunc(type),

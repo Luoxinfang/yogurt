@@ -18,11 +18,9 @@
       </li>
     {%endfor%}
   </ul>
-  <div class="index">
-    <ul class="con center"></ul>
-  </div>
+  <ul class="index dib"></ul>
 </div>
 
 {%script%}
-  require('common:js/hz-plugin/slider.js');
+require('common:js/hz-plugin/slider.js');
 {%endscript%}

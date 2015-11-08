@@ -8,6 +8,7 @@ module.exports = function (req, res) {
   var nav = require('../model/nav.js');
   var util = require('../lib/util.js');
   var model = yog.require('common/lib/loader-model.js')();
+
   var resObj = _.extend(req.public, {
     app: app.getInfo(),
     msgList: model.msgList,

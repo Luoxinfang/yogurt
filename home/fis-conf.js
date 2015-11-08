@@ -2,13 +2,11 @@
  * @file FIS 配置
  * @author roy
  */
-
 fis.config.set('namespace', 'home');
 //设置git目录下面的文件是不解析
 fis.set('project.ignore', [
   '.git/**'
 ]);
-
 
 // chrome下可以安装插件实现livereload功能
 // https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
@@ -23,7 +21,6 @@ fis.media('debug').match('*', {
   })
 });
 
-
 // 启用 fis-spriter-csssprites 插件
 fis.match('::package', {
   spriter: fis.plugin('csssprites')
@@ -35,9 +32,7 @@ fis.config.set('settings.spriter.csssprites', {
   layout: 'matrix'
 });
 
-
-//==================
-//生产环境配置
+//==================生产环境配置==================
 fis.media('prod').match('*', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://127.0.0.1:3000/yog/upload',
@@ -45,20 +40,22 @@ fis.media('prod').match('*', {
   })
 });
 
-//static下面的资源全部加hash
-fis.media('prod').match('/static/**.{css,less,scss,js}', {
-  useHash: true
+//对tpl文件进行优化
+fis.media('prod').match('/**.tpl', {
+  //parser: fis.plugin('optimizer-tpl')
+  parser: function (content, file, settings) {
+    return content.replace(/<!--[\s\S]*?-->/g,'');
+  }
 });
 
 /*
-* 把每个模块对应的css打包 这样会有一个common.css 还会有一个index.css|about.css
-* common.css是当前子app的公用css
-* index.css是当前页面独有的css 这里以index举例
-* */
+ * 把每个模块对应的js、css打包 这样会有一个common.css 还会有一个index.css|about.css
+ * common.css是当前子app的公用css
+ * index.css是当前页面独有的css 这里以index举例
+ * */
+fis.media('prod').match('widget/(*)/**.js', {
+  packTo: 'static/js/$1.js'
+});
 fis.media('prod').match('widget/(*)/**.css', {
   packTo: 'static/css/$1.css'
 });
-fis.media('prod').match('widget/(*)/**.js', {
-    packTo: 'static/js/$1.js'
-});
-

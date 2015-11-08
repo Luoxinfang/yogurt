@@ -8,13 +8,10 @@
   background: no-repeat center 0;
 }
 .slider .index {
-  position: relative;
-}
-.slider .index .con {
   position: absolute;
-  left: 50%;
   bottom: 0px;
-  padding: 15px;
+  left: 50%;
+  padding: 15px 0;
 }
 .slider .index li {
   float: left;

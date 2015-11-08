@@ -25,6 +25,7 @@
     "yog2-kernel": "0.3.3"
   },
   "devDependencies": {
-    "mockjs": "^0.1.10"
+    "mockjs": "^0.1.10",
+    "yog2-postprocessor-optimizer-tpl": "0.0.1"
   }
 }

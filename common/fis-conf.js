@@ -62,6 +62,7 @@ fis.media('prod').match('client/**.{css,js}', {
 fis.media('prod').match('client/**.css', {
   packTo: 'client/css/global.css'
 });
+
 //把common模块公用的js压缩成lib.js
 fis.media('prod').match('client/js/{lib,plugin}/*.js', {
   packTo: 'client/js/lib.js'

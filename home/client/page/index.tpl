@@ -99,12 +99,12 @@
 			-->
 		<div class="notify-list-wrap">
 			<div class="loading">正在加载数据...</div>
-			{%spage 'home:widget/bigpipe/notify-list/main.tpl' id="notify-list" mode="async"%}
+			{%spage 'home:widget/index/bigpipe/notify-list/main.tpl' id="notify-list" mode="async"%}
 		</div>
 
 		<div class="bigpipe-test-wrap">
 			<div class="loading">测试多个bigpipe模块</div>
-			{%spage 'home:widget/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async"%}
+			{%spage 'home:widget/index/bigpipe/bigpipe-test/main.tpl' id="bigpipe-test" mode="async"%}
 		</div>
 
 	{% script %}
