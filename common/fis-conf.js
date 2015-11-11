@@ -53,9 +53,9 @@ fis.media('prod').match('*', {
     to: '/'
   })
 });
-//static下面的资源全部加hash
-fis.media('prod').match('client/**.{css,js}', {
-  useHash: true
+//对tpl文件进行优化
+fis.media('prod').match('/**.tpl', {
+  optimizer: fis.plugin('tpl')
 });
 
 //把common模块公用的css压缩成global.css

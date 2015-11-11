@@ -42,10 +42,7 @@ fis.media('prod').match('*', {
 
 //对tpl文件进行优化
 fis.media('prod').match('/**.tpl', {
-  //parser: fis.plugin('optimizer-tpl')
-  parser: function (content, file, settings) {
-    return content.replace(/<!--[\s\S]*?-->/g,'');
-  }
+  optimizer: fis.plugin('tpl')
 });
 
 /*

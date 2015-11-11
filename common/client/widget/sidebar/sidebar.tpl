@@ -1,6 +1,4 @@
-<!--
-   sidebar model
--->
+<!--sidebar model-->
 
 <div class="sidebar">
     <ul>
