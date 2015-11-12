@@ -1,4 +1,26 @@
-
-.nav-wrap{
-
+.notice {
+  background-color: white;
+  height: 42px;
+  line-height: 42px;
+}
+.notice .btn-close {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-top: 8px;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+/* 最新公告 */
+.notice .msg-wrap {
+  margin-left: 15px;
+}
+.notice .msg-list {
+  height: 42px;
+  line-height: 42px;
+  overflow: hidden;
+  max-width: 900px;
 }

@@ -1,11 +1,12 @@
 .ui-nav {
-  overflow: hidden;
 	font-size: 16px;
 	line-height: 60px;
+  overflow: hidden;
   font-family: "Microsoft YaHei", tahoma, arial, SimSun;
 }
 
 .ui-nav-item {
+
 	float: left;
 }
 
@@ -27,4 +28,9 @@
 	width: 76px;
 	color: #ffffff;
 	border-top: 5px solid #e4393c;
+}
+
+.ui-nav-children-list{
+  position: absolute;
+  display: none;
 }

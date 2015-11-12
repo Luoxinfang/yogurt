@@ -23,7 +23,7 @@
 {% widget 'manage:widget/common/header/header.tpl' %}
 <!-- main content -->
 {% block content %}
-	加载�?...
+	加载中...
 {% endblock %}
 
 

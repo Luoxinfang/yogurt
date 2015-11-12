@@ -7,9 +7,7 @@ fis.config.set('namespace', 'home');
 fis.set('project.ignore', [
   '.git/**'
 ]);
-
 // chrome下可以安装插件实现livereload功能
-// https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
 fis.config.set('livereload.port', 35729);
 
 fis.media('debug').match('*', {
@@ -39,17 +37,11 @@ fis.media('prod').match('*', {
     to: '/'
   })
 });
-
 //对tpl文件进行优化
 fis.media('prod').match('/**.tpl', {
   optimizer: fis.plugin('tpl')
 });
-
-/*
- * 把每个模块对应的js、css打包 这样会有一个common.css 还会有一个index.css|about.css
- * common.css是当前子app的公用css
- * index.css是当前页面独有的css 这里以index举例
- * */
+//把对应的模块的js和css合并
 fis.media('prod').match('widget/(*)/**.js', {
   packTo: 'static/js/$1.js'
 });
